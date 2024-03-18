@@ -1,0 +1,5 @@
+config/credentials/*.json
+config/.env
+data/processed/*.csv
+data/raw/*.csv
+.venv  

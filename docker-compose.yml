@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  unifor-teste:
+    container_name: unifor-teste
+    image: postgres:16.0
+    environment:
+      POSTGRES_USER: unifor
+      POSTGRES_PASSWORD: unifor
+      POSTGRES_DB: unifor_duckdb
+    ports:
+      - "5437:5432"
