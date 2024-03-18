@@ -10,3 +10,5 @@ services:
       POSTGRES_DB: unifor_duckdb
     ports:
       - "5437:5432"
+    volumes:
+    - ./jobs/sql:/docker-entrypoint-initdb.d
