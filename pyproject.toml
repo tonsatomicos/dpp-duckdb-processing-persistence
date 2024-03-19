@@ -2,7 +2,7 @@
 name = "duckdb-processing-persistence"
 version = "0.1.0"
 description = ""
-authors = ["Ant4res <pr1v4t3.lm@gmail.com>"]
+authors = ""
 readme = "README.md"
 
 [tool.poetry.dependencies]
