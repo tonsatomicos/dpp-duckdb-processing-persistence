@@ -63,3 +63,17 @@ Substitua <code>id_da_pasta_google_drive</code> pelo ID da pasta do Google Drive
 
 ### Conclusão
 Após seguir esses passos, você estará pronto para automatizar o download dos arquivos do Google Drive. Esteja ciente de que este tutorial é uma orientação geral e pode precisar ser ajustado.
+
+## Configurações do Projeto - Parte 2
+
+E é aqui onde entra o DuckDB, como já definimos a estrutura da tabela temporária que irá receber as informações do CSV
+<pre><code>conn.execute("CREATE TEMPORARY TABLE temp_table (COD_UF VARCHAR, COD_MUN VARCHAR, COD_ESPECIE VARCHAR, LATITUDE VARCHAR, LONGITUDE VARCHAR, NV_GEO_COORD VARCHAR, NOME_ARQUIVO VARCHAR, DT_CADASTRO DATETIME)")
+</code></pre>
+Podemos partir para as configurações do banco Postgres, onde iremos persistir as informações. <br><br>Como estou utilizando Docker, ele já faz esse serviço, de criação do banco, configuração de usuário e senha, e criação de tabela.
+<br>Mas caso esteja replicando esse desafio e não queira utilizar Docker, você pode criar manualmente através do pgAdmin ou via terminal, se assim preferir.</p>
+
+Lembre-se sempre de verificar o usuário, senha e base. Procure na estrutura o seguinte código e altere se necessário:</p>
+
+<pre><code>conn.execute("ATTACH 'dbname=unifor_duckdb user=unifor password=unifor host=localhost port=5437' AS db (TYPE postgres)")</code></pre>
+
+Isso irá garantir que as informações sejam persistidas no banco de dados PostgreSQL.</p>
