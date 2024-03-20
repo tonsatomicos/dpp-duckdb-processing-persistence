@@ -76,8 +76,6 @@ Você pode escolher entre utilizar o Docker para subir um banco Postgres ou inst
 
 #### Utilizando Docker
 
-Utilize o seguinte comando para subir o container:
-
 <pre><code>docker-compose up -d</code></pre>
 
 #### Outras maneiras
