@@ -82,6 +82,8 @@ Rode o comando no terminal
 
 Segue tutorial aleatório da **<a href="https://youtu.be/L_2l8XTCPAE?si=-OJ21qv_48BgHFq2">Hashtag Treinamentos</a>**.
 
+Script de criação da tabela disponibilizado em <code>jobs/sql</code>.
+
 ### Conclusão
 
 Lembre-se sempre de verificar o usuário, senha e base. Procure na estrutura o seguinte código e altere se necessário:
