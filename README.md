@@ -70,15 +70,17 @@ Após seguir esses passos, você estará pronto para automatizar o download dos 
 
 E é aqui que começamos a leitura, processamento e persistência. Como já definimos a estrutura da tabela temporária que irá receber as informações do CSV com Duckdb, podemos partir para as configurações do banco Postgres, onde iremos persistir as informações.
 
+### Banco de dados Postgres
+
 Você pode escolher entre utilizar o Docker para subir um banco Postgres ou instalar manualmente na máquina.
 
-### Utilizando Docker
+#### Utilizando Docker
 
 Utilize o seguinte comando para subir o container:
 
 <pre><code>docker-compose up -d</code></pre>
 
-### Outras maneiras
+#### Outras maneiras
 
 Segue tutorial aleatório da **<a href="https://youtu.be/L_2l8XTCPAE?si=-OJ21qv_48BgHFq2">Hashtag Treinamentos</a>**. <br>Script de criação da tabela disponibilizado em <code>jobs/sql</code>.
 
