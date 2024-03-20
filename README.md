@@ -91,7 +91,7 @@ Lembre-se sempre de verificar o usuário, senha e base. Procure na estrutura o s
 Isso irá garantir que as informações sejam persistidas no banco de dados PostgreSQL.</p>
 
 
-### Considerações Finais
+## Considerações Finais
 
 - Os arquivos CSV não estão disponíveis nas pastas <code>raw</code> e <code>processed</code> porque são muito pesados.
 - O código foi adaptado para lidar com erros, ou pelo menos auxiliar na compreensão deles, e para evitar o download de arquivos que já foram baixados anteriormente, além de mover os arquivos processados para a pasta <code>processed</code>.
