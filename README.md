@@ -94,8 +94,8 @@ Isso irá garantir que as informações sejam persistidas no banco de dados Post
 ## Considerações Finais
 
 - Os arquivos CSV não estão disponíveis nas pastas <code>raw</code> e <code>processed</code> porque são muito pesados.
-- O código foi adaptado para lidar com erros, ou pelo menos auxiliar na compreensão deles, e para evitar o download de arquivos que já foram baixados anteriormente, além de mover os arquivos processados para a pasta <code>processed</code>.
-- Também inclui a funcionalidade de salvar o nome do arquivo na tabela, juntamente com a data e hora de processamento.
+- O código foi adaptado para lidar com erros, ou pelo menos auxiliar na compreensão deles, e para evitar o download de arquivos que já foram baixados anteriormente.
+- Também inclui a "boa prática" de salvar o nome do arquivo na tabela, juntamente com a data e hora de processamento.
 - É notável o quão rápido o DuckDB conseguiu ler, processar e persistir mais de 100 milhões de linhas. Surge um forte concorrente para o Spark? Veremos nos próximos episódios.
 
 <hr>
