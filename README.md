@@ -29,7 +29,7 @@ Este projeto foi desenvolvido utilizando o Poetry para gerenciamento de ambiente
 
 ### Instalação das Dependências
 
-Você pode instalar as dependências manualmente, ou, utilizando o Poetry ou o Pip com os seguintes comandos:
+Você pode instalar as dependências manualmente, ou, utilizando o Poetry ou o Pip com os seguintes comandos.
 
 #### Utilizando Poetry
 
@@ -84,7 +84,7 @@ Segue tutorial aleatório da **<a href="https://youtu.be/L_2l8XTCPAE?si=-OJ21qv_
 
 ### Conclusão
 
-Lembre-se sempre de verificar o usuário, senha, base e porta. Procure na estrutura o seguinte código, localizado na função <code>processing_persistence</code>, e altere se necessário:
+Lembre-se sempre de verificar o usuário, senha, base e porta. Procure na estrutura o seguinte código, localizado na função <code>processing_persistence</code>, e altere se necessário.
 
 <pre><code>conn.execute("ATTACH 'dbname=unifor_duckdb user=unifor password=unifor host=localhost port=5437' AS db (TYPE postgres)")</code></pre>
 
