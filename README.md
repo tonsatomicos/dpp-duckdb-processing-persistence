@@ -15,9 +15,9 @@ Sinta-se à vontade para clonar, replicar, alterar e fazer o que desejar. Mas se
 
 ## Dependências do Projeto
 
-Este projeto foi desenvolvido utilizando o Poetry para gerenciamento de ambientes virtuais e pacotes.
+Este projeto foi desenvolvido utilizando o Poetry para gerenciamento de ambientes virtuais e bibliotecas.
 
-### Pacotes Utilizados
+### Bibliotecas Utilizadas
 
 - duckdb (v0.10.1)
 - jupyter (v1.0.0)
