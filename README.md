@@ -47,8 +47,8 @@ pip install -r requirements.txt
 
 ## Configurações do Projeto - Parte 1
 
-- Acesso ao Google Cloud Console: **<a href="https://console.cloud.google.com">console.cloud.google.com</a>**
-- Conta de e-mail para configuração de permissões
+- Acesso ao Google Cloud Console: **<a href="https://console.cloud.google.com">console.cloud.google.com</a>**.
+- Conta de e-mail para configuração de permissões.
 
 ### Passos
 
@@ -74,15 +74,13 @@ Você pode escolher entre utilizar o Docker para subir um banco Postgres ou inst
 
 ### Utilizando Docker
 
-Rode o comando no terminal
+Utilize o seguinte comando para subir o container:
 
 <pre><code>docker-compose up -d</code></pre>
 
 ### Outras maneiras
 
-Segue tutorial aleatório da **<a href="https://youtu.be/L_2l8XTCPAE?si=-OJ21qv_48BgHFq2">Hashtag Treinamentos</a>**.
-
-Script de criação da tabela disponibilizado em <code>jobs/sql</code>.
+Segue tutorial aleatório da **<a href="https://youtu.be/L_2l8XTCPAE?si=-OJ21qv_48BgHFq2">Hashtag Treinamentos</a>**. <br>Script de criação da tabela disponibilizado em <code>jobs/sql</code>.
 
 ### Conclusão
 
