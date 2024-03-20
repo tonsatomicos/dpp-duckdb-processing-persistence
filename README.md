@@ -68,14 +68,28 @@ Após seguir esses passos, você estará pronto para automatizar o download dos 
 
 ## Configurações do Projeto - Parte 2
 
-E é aqui onde entra o DuckDB, como já definimos a estrutura da tabela temporária que irá receber as informações do CSV
-<pre><code>conn.execute("CREATE TEMPORARY TABLE temp_table (COD_UF VARCHAR, COD_MUN VARCHAR, COD_ESPECIE VARCHAR, LATITUDE VARCHAR, LONGITUDE VARCHAR, NV_GEO_COORD VARCHAR, NOME_ARQUIVO VARCHAR, DT_CADASTRO DATETIME)")
-</code></pre>
-Podemos partir para as configurações do banco Postgres, onde iremos persistir as informações. <br><br>Como estou utilizando Docker, ele já faz esse serviço, de criação do banco, configuração de usuário e senha, e criação de tabela.
-<br>Mas caso esteja replicando esse desafio e não queira utilizar Docker, você pode criar manualmente através do pgAdmin ou via terminal, se assim preferir.</p>
+E é aqui que começamos a leitura, processamento e persistência. Como já definimos a estrutura da tabela temporária que irá receber as informações do CSV com Duckdb, podemos partir para as configurações do banco Postgres, onde iremos persistir as informações.
 
-Lembre-se sempre de verificar o usuário, senha e base. Procure na estrutura o seguinte código e altere se necessário:</p>
+Você pode escolher entre utilizar o Docker para subir um banco Postgres ou instalar manualmente na máquina.
+
+### Utilizando Docker
+
+Rode o comando no terminal
+
+<pre><code>docker-compose up -d</code></pre>
+
+### Outras maneiras
+
+Segue tutorial aleatório da **<a href="https://youtu.be/L_2l8XTCPAE?si=-OJ21qv_48BgHFq2">Hashtag Treinamentos</a>**.
+
+### Conclusão
+
+Lembre-se sempre de verificar o usuário, senha e base. Procure na estrutura o seguinte código e altere se necessário:
 
 <pre><code>conn.execute("ATTACH 'dbname=unifor_duckdb user=unifor password=unifor host=localhost port=5437' AS db (TYPE postgres)")</code></pre>
 
 Isso irá garantir que as informações sejam persistidas no banco de dados PostgreSQL.</p>
+
+<hr>
+
+![Image](https://i.imgur.com/p4vnGAN.gif)
