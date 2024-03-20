@@ -68,11 +68,11 @@ Após seguir esses passos, você estará pronto para automatizar o download dos 
 
 ## Configurações do Projeto - Parte 2
 
-E é aqui que começamos a leitura, processamento e persistência. Como já definimos a estrutura da tabela temporária que irá receber as informações do CSV com Duckdb, podemos partir para as configurações do banco Postgres, onde iremos persistir as informações.
+E é aqui que começamos a leitura, processamento e persistência. Como já definimos a estrutura da tabela temporária que irá receber as informações do CSV com Duckdb, podemos partir para as configurações do banco PostgreSQL, onde iremos persistir as informações.
 
-### Banco de dados Postgres
+### Banco de dados PostgreSQL
 
-Você pode escolher entre utilizar o Docker para subir um banco Postgres ou instalar manualmente na máquina.
+Você pode escolher entre utilizar o Docker para subir um banco PostgreSQL ou instalar manualmente na máquina.
 
 #### Utilizando Docker
 
