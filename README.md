@@ -13,17 +13,17 @@
 
 ## Dependências do Projeto
 
-**Este projeto foi desenvolvido utilizando o Poetry para gerenciamento de ambientes virtuais e pacotes.**
+Este projeto foi desenvolvido utilizando o Poetry para gerenciamento de ambientes virtuais e pacotes.
 
 ### Pacotes Utilizados
 
-- **duckdb** (v0.10.1)
-- **jupyter** (v1.0.0)
-- **google-auth** (v2.28.2)
-- **google-auth-oauthlib** (v1.2.0)
-- **google-auth-httplib2** (v0.2.0)
-- **google-api-python-client** (v2.122.0)
-- **python-dotenv** (v1.0.1)
+- duckdb (v0.10.1)
+- jupyter (v1.0.0)
+- google-auth (v2.28.2)
+- google-auth-oauthlib (v1.2.0)
+- google-auth-httplib2 (v0.2.0)
+- google-api-python-client (v2.122.0)
+- python-dotenv (v1.0.1)
 
 ### Instalação das Dependências
 
@@ -45,21 +45,21 @@ pip install -r requirements.txt
 
 ## Configurações do Projeto - Parte 1
 
-- **Acesso ao Google Cloud Console: <a href="https://console.cloud.google.com">console.cloud.google.com</a>**
-- **Conta de e-mail para configuração de permissões**
+- Acesso ao Google Cloud Console: **<a href="https://console.cloud.google.com">console.cloud.google.com</a>**
+- Conta de e-mail para configuração de permissões
 
 ### Passos
 
-- **Acesse o Google Cloud Console utilizando o link fornecido acima.**
-- **Crie um novo projeto no menu principal.**
-- **No menu lateral, navegue até "APIs e Serviços" > "Tela de Permissão OAuth" e adicione o seu endereço de e-mail como um usuário de teste.**
-- **Volte ao menu principal e selecione "Credenciais".**
-- **Crie um novo conjunto de credenciais selecionando "IDs do Cliente OAuth".**
-- **Baixe o arquivo de credenciais gerado e salve-o como credentials.json, na pasta <code>config/credentials</code>.**
-- **Na barra de pesquisa na parte superior da página, procure por "Google Drive API" e clique para ativar o serviço.</li>**
-- **Crie um arquivo <code>.env</code> na pasta <code>config</code> e salve nele a seguinte linha:**
+- Acesse o Google Cloud Console utilizando o link fornecido acima.
+- Crie um novo projeto no menu principal.
+- No menu lateral, navegue até "APIs e Serviços" > "Tela de Permissão OAuth" e adicione o seu endereço de e-mail como um usuário de teste.
+- Volte ao menu principal e selecione "Credenciais".
+- Crie um novo conjunto de credenciais selecionando "IDs do Cliente OAuth".
+- Baixe o arquivo de credenciais gerado e salve-o como credentials.json, na pasta <code>config/credentials</code>.
+- Na barra de pesquisa na parte superior da página, procure por "Google Drive API" e clique para ativar o serviço.</li>
+- Crie um arquivo <code>.env</code> na pasta <code>config</code> e salve nele a seguinte linha:
 <pre><code>FOLDER_ID=id_da_pasta_google_drive</code></pre>
-**Substitua <code>id_da_pasta_google_drive</code> pelo ID da pasta do Google Drive que você deseja acessar para fazer o download dos arquivos.**
+Substitua <code>id_da_pasta_google_drive</code> pelo ID da pasta do Google Drive que você deseja acessar para fazer o download dos arquivos.
 
 ### Conclusão
-**Após seguir esses passos, você estará pronto para automatizar o download dos arquivos do Google Drive. Esteja ciente de que este tutorial é uma orientação geral e pode precisar ser ajustado dependendo das especificidades do seu projeto.**
+Após seguir esses passos, você estará pronto para automatizar o download dos arquivos do Google Drive. Esteja ciente de que este tutorial é uma orientação geral e pode precisar ser ajustado dependendo das especificidades do seu projeto.
