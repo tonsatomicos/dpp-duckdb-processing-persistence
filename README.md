@@ -29,7 +29,7 @@ Este projeto foi desenvolvido utilizando o Poetry para gerenciamento de ambiente
 
 ### Instalação das Dependências
 
-Você pode instalar as dependências utilizando o Poetry ou o Pip com os seguintes comandos:
+Você pode instalar as dependências manualmente, ou, utilizando o Poetry ou o Pip com os seguintes comandos:
 
 #### Utilizando Poetry
 
