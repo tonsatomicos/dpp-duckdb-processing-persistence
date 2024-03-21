@@ -72,7 +72,7 @@ E é aqui que começamos a leitura, processamento e persistência. Como já defi
 
 ### Banco de dados PostgreSQL
 
-Você pode escolher entre utilizar o Docker para subir um banco PostgreSQL ou instalar manualmente na máquina.
+Você pode escolher entre utilizar o Docker para subir um banco PostgreSQL ou instalar de outras maneiras.
 
 #### Utilizando Docker
 
