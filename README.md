@@ -1,7 +1,7 @@
 # <p align="center">DuckDB - Processando e Persistindo</p>
 
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=LICENSE&message=...&color=GREEN&style=for-the-badge"/>     
+<img src="http://img.shields.io/static/v1?label=LICENCA&message=...&color=GREEN&style=for-the-badge"/>     
 <img src="http://img.shields.io/static/v1?label=STATUS&message=N/A&color=GREEN&style=for-the-badge"/>
 </p>
 
