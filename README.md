@@ -11,7 +11,7 @@ O objetivo era lidar com um grande volume de dados sem recorrer ao uso de biblio
 
 Sobre esse desafio, existem muitas abordagens para resolver, mas optei por automatizar o processo de extração desses CSV para evitar que se tornasse uma atividade manual. Além disso, utilizei o DuckDB para leitura, processamento e persistência dos dados em um banco de dados PostgreSQL, o qual está dockerizado.
 
-Sinta-se à vontade para clonar, replicar, alterar e fazer o que desejar. Mas se estiver considerando replicar este projeto para uso ou teste, siga as instruções abaixo. =)
+Sinta-se à vontade para clonar, replicar, alterar e fazer o que desejar. Mas se estiver considerando replicar este projeto para uso ou teste, siga as instruções abaixo. :alien:
 
 ## Dependências do Projeto
 
