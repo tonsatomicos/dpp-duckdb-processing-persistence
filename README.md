@@ -7,9 +7,9 @@
 
 Esse projeto é resultado de um desafio desenvolvido durante a disciplina de Linguagem de Programação para Engenharia de Dados, no curso de pós-graduação em Engenharia de Dados, na Universidade de Fortaleza (Unifor).
 
-O objetivo era lidar com um grande volume de dados sem recorrer ao uso de bibliotecas como pandas e spark, e ao final persistir os dados em algum banco de dados. Os dados foram disponibilizados no formato CSV, hospedados no Google Drive.
+O desafio era lidar com um grande volume de dados em formato CSV, hospedados no Google Drive, sem depender de bibliotecas como pandas e Spark. Optei por automatizar o processo de extração desses CSV para evitar atividades manuais. 
 
-Sobre esse desafio, existem muitas abordagens para resolver, mas optei por automatizar o processo de extração desses CSV para evitar que se tornasse uma atividade manual. Além disso, utilizei o DuckDB para leitura, processamento e persistência dos dados em um banco de dados PostgreSQL, o qual está dockerizado.
+Além disso, para leitura, processamento e persistência dos dados, escolhi utilizar o DuckDB. Os dados foram armazenados em um banco de dados PostgreSQL, o qual foi dockerizado para facilitar o gerenciamento do ambiente.
 
 ![Diagram](https://github.com/tonsatomicos/dpp-duckdb-processing-persistence/blob/main/assets/diagram.png?raw=true)
 
