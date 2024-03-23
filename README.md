@@ -1,7 +1,5 @@
 # <p align="center">DuckDB - Processando e Persistindo</p>
 
-![Diagram](https://github.com/tonsatomicos/dpp-duckdb-processing-persistence/blob/main/assets/diagram.png?raw=true)
-
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=LICENCA&message=...&color=GREEN&style=for-the-badge"/>     
 <img src="http://img.shields.io/static/v1?label=STATUS&message=N/A&color=GREEN&style=for-the-badge"/>
@@ -12,6 +10,8 @@ Esse projeto é resultado de um desafio desenvolvido durante a disciplina de Lin
 O objetivo era lidar com um grande volume de dados sem recorrer ao uso de bibliotecas como pandas e spark, e ao final persistir os dados em algum banco de dados. Os dados foram disponibilizados no formato CSV, hospedados no Google Drive.
 
 Sobre esse desafio, existem muitas abordagens para resolver, mas optei por automatizar o processo de extração desses CSV para evitar que se tornasse uma atividade manual. Além disso, utilizei o DuckDB para leitura, processamento e persistência dos dados em um banco de dados PostgreSQL, o qual está dockerizado.
+
+![Diagram](https://github.com/tonsatomicos/dpp-duckdb-processing-persistence/blob/main/assets/diagram.png?raw=true)
 
 Sinta-se à vontade para clonar, replicar, alterar e fazer o que desejar. Mas se estiver considerando replicar este projeto para uso ou teste, siga as instruções abaixo. :alien:
 
