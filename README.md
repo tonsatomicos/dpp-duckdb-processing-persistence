@@ -1,23 +1,23 @@
 # <p align="center">DuckDB - Processando e Persistindo</p>
 
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=LICENSE&message=...&color=GREEN&style=for-the-badge"/>     
+<img src="http://img.shields.io/static/v1?label=LICENCA&message=...&color=GREEN&style=for-the-badge"/>     
 <img src="http://img.shields.io/static/v1?label=STATUS&message=N/A&color=GREEN&style=for-the-badge"/>
 </p>
 
-Desafio desenvolvido durante a disciplina de Linguagens de Programação para Engenharia de Dados, no curso de pós-graduação em Engenharia de Dados, na Universidade de Fortaleza (Unifor).
+Esse projeto é resultado de um desafio desenvolvido durante a disciplina de Linguagem de Programação para Engenharia de Dados, no curso de pós-graduação em Engenharia de Dados, na Universidade de Fortaleza (Unifor).
 
 O objetivo era lidar com um grande volume de dados sem recorrer ao uso de bibliotecas como pandas e spark, e ao final persistir os dados em algum banco de dados. Os dados foram disponibilizados no formato CSV, hospedados no Google Drive.
 
 Sobre esse desafio, existem muitas abordagens para resolver, mas optei por automatizar o processo de extração desses CSV para evitar que se tornasse uma atividade manual. Além disso, utilizei o DuckDB para leitura, processamento e persistência dos dados em um banco de dados PostgreSQL, o qual está dockerizado.
 
-Sinta-se à vontade para clonar, replicar, alterar e fazer o que desejar. Mas se estiver considerando replicar este projeto para uso ou teste, siga as instruções abaixo. =)
+Sinta-se à vontade para clonar, replicar, alterar e fazer o que desejar. Mas se estiver considerando replicar este projeto para uso ou teste, siga as instruções abaixo. :alien:
 
 ## Dependências do Projeto
 
-Este projeto foi desenvolvido utilizando o Poetry para gerenciamento de ambientes virtuais e pacotes.
+Este projeto foi desenvolvido utilizando o Poetry para gerenciamento de ambientes virtuais e bibliotecas.
 
-### Pacotes Utilizados
+### Bibliotecas Utilizadas
 
 - duckdb (v0.10.1)
 - jupyter (v1.0.0)
@@ -29,7 +29,7 @@ Este projeto foi desenvolvido utilizando o Poetry para gerenciamento de ambiente
 
 ### Instalação das Dependências
 
-Você pode instalar as dependências utilizando o Poetry ou o Pip com os seguintes comandos:
+Você pode instalar as dependências manualmente, ou, utilizando o Poetry ou o Pip com os seguintes comandos.
 
 #### Utilizando Poetry
 
@@ -72,7 +72,7 @@ E é aqui que começamos a leitura, processamento e persistência. Como já defi
 
 ### Banco de dados PostgreSQL
 
-Você pode escolher entre utilizar o Docker para subir um banco PostgreSQL ou instalar manualmente na máquina.
+Você pode escolher entre utilizar o Docker para subir um banco PostgreSQL ou instalar de outras maneiras.
 
 #### Utilizando Docker
 
@@ -84,7 +84,7 @@ Segue tutorial aleatório da **<a href="https://youtu.be/L_2l8XTCPAE?si=-OJ21qv_
 
 ### Conclusão
 
-Lembre-se sempre de verificar o usuário, senha, base e porta. Procure na estrutura o seguinte código e altere se necessário:
+Lembre-se sempre de verificar o usuário, senha, base e porta. Procure na estrutura o seguinte código, localizado na função <code>processing_persistence</code>, e altere se necessário.
 
 <pre><code>conn.execute("ATTACH 'dbname=unifor_duckdb user=unifor password=unifor host=localhost port=5437' AS db (TYPE postgres)")</code></pre>
 
@@ -94,8 +94,8 @@ Isso irá garantir que as informações sejam persistidas no banco de dados Post
 ## Considerações Finais
 
 - Os arquivos CSV não estão disponíveis nas pastas <code>raw</code> e <code>processed</code> porque são muito pesados.
-- O código foi adaptado para lidar com erros, ou pelo menos auxiliar na compreensão deles, e para evitar o download de arquivos que já foram baixados anteriormente, além de mover os arquivos processados para a pasta <code>processed</code>.
-- Também inclui a funcionalidade de salvar o nome do arquivo na tabela, juntamente com a data e hora de processamento.
+- O código foi adaptado para lidar com erros, ou pelo menos auxiliar na compreensão deles, e para evitar o download de arquivos que já foram baixados anteriormente.
+- Também inclui a "boa prática" de salvar o nome do arquivo na tabela, juntamente com a data e hora de processamento.
 - É notável o quão rápido o DuckDB conseguiu ler, processar e persistir mais de 100 milhões de linhas. Surge um forte concorrente para o Spark? Veremos nos próximos episódios.
 
 <hr>
