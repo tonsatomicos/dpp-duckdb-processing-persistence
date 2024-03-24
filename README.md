@@ -11,9 +11,11 @@ O desafio era lidar com um grande volume de dados em formato CSV, hospedados no 
 
 Além disso, para leitura, processamento e persistência dos dados, escolhi utilizar o DuckDB. Os dados foram armazenados em um banco de dados PostgreSQL, o qual foi dockerizado para facilitar o gerenciamento do ambiente.
 
+## Diagrama de Fluxo
+
 ![Diagram](https://github.com/tonsatomicos/dpp-duckdb-processing-persistence/blob/main/assets/diagram.png?raw=true)
 
-Sinta-se à vontade para clonar, replicar, alterar e fazer o que desejar. Mas se estiver considerando replicar este projeto para uso ou teste, siga as instruções abaixo. :alien:
+Sinta-se à vontade para clonar, adaptar e ajustar o projeto conforme necessário. Consulte as instruções abaixo, se precisar. :alien:
 
 ## Dependências do Projeto
 
