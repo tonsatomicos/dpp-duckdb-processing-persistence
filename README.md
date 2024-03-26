@@ -11,6 +11,8 @@ O desafio era lidar com um grande volume de dados em formato CSV, hospedados no 
 
 Além disso, para leitura, processamento e persistência dos dados, escolhi utilizar o DuckDB. Os dados foram armazenados em um banco de dados PostgreSQL, o qual foi dockerizado para facilitar o gerenciamento do ambiente.
 
+É importante ressaltar que os dados utilizados nesse desafio estão disponíveis no Google Drive exclusivamente para os alunos da disciplina. No entanto, o projeto pode ser facilmente adaptado para outros contextos nos quais os dados estejam disponíveis.
+
 ## Diagrama de Fluxo
 
 ![Diagram](https://github.com/tonsatomicos/dpp-duckdb-processing-persistence/blob/main/assets/diagram.png?raw=true)
