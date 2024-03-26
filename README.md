@@ -7,7 +7,7 @@
 
 Esse projeto é resultado de um desafio desenvolvido durante a disciplina de Linguagem de Programação para Engenharia de Dados, no curso de pós-graduação em Engenharia de Dados, na Universidade de Fortaleza (Unifor).
 
-O desafio era lidar com um grande volume de dados em formato CSV, hospedados no Google Drive, sem depender de bibliotecas como Pandas e Spark. Optei por automatizar o processo de extração desses CSV para evitar atividades manuais. 
+O desafio era lidar com um grande volume de dados relacionados ao Instituto Brasileiro de Geografia e Estatística (IBGE), em formato CSV, hospedados no Google Drive, sem depender de bibliotecas como Pandas e Spark. Optei por automatizar o processo de extração desses CSV para evitar atividades manuais. 
 
 Além disso, para leitura, processamento e persistência dos dados, escolhi utilizar o DuckDB. Os dados foram armazenados em um banco de dados PostgreSQL, o qual foi dockerizado para facilitar o gerenciamento do ambiente.
 
