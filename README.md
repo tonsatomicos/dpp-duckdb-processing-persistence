@@ -100,6 +100,7 @@ Isso irá garantir que as informações sejam persistidas no banco de dados Post
 - Os arquivos CSV não estão disponíveis nas pastas <code>raw</code> e <code>processed</code> porque são muito pesados.
 - O código foi adaptado para lidar com erros, ou pelo menos auxiliar na compreensão deles, e para evitar o download de arquivos que já foram baixados anteriormente.
 - Também inclui a "boa prática" de salvar o nome do arquivo na tabela, juntamente com a data e hora de processamento.
+- Foram disponibilizados dois scripts Jupyter: um chamado 'functional', que utiliza apenas funções, e outro chamado 'oriented', que utiliza orientação a objetos (o que não é muito diferente do functional).
 - É notável o quão rápido o DuckDB conseguiu ler, processar e persistir mais de 100 milhões de linhas. Surge um forte concorrente para o Spark? Veremos nos próximos episódios.
 
 <hr>
