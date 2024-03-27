@@ -5,13 +5,13 @@
 <img src="http://img.shields.io/static/v1?label=STATUS&message=N/A&color=GREEN&style=for-the-badge"/>
 </p>
 
-Esse projeto é resultado de um desafio desenvolvido durante a disciplina de Linguagem de Programação para Engenharia de Dados, no curso de pós-graduação em Engenharia de Dados, na Universidade de Fortaleza (Unifor).
+Este projeto foi concebido como parte de um desafio durante a disciplina de Linguagem de Programação para Engenharia de Dados, no curso de pós-graduação em Engenharia de Dados, na Universidade de Fortaleza (Unifor).
 
-O desafio era lidar com um grande volume de dados relacionados ao Instituto Brasileiro de Geografia e Estatística (IBGE), em formato CSV, hospedados no Google Drive, sem depender de bibliotecas como Pandas e Spark. Optei por automatizar o processo de extração desses CSV para evitar atividades manuais. 
+O desafio consistia em lidar com um extenso volume de dados fornecidos pelo Instituto Brasileiro de Geografia e Estatística (IBGE), no formato CSV, hospedados no Google Drive, sem depender de bibliotecas como Pandas e Spark. Optei por automatizar o processo de extração desses arquivos CSV para eliminar a necessidade de intervenção manual.
 
-Além disso, para leitura, processamento e persistência dos dados, escolhi utilizar o DuckDB. Os dados foram armazenados em um banco de dados PostgreSQL, o qual foi dockerizado para facilitar o gerenciamento do ambiente.
+Para a leitura, processamento e persistência dos dados, escolhi utilizar o DuckDB. Os dados foram armazenados em um banco de dados PostgreSQL, o qual foi dockerizado para simplificar o gerenciamento do ambiente.
 
-É importante ressaltar que os dados utilizados nesse desafio estão disponíveis no Google Drive exclusivamente para os alunos da disciplina. No entanto, o projeto pode ser facilmente adaptado para outros contextos nos quais os dados estejam disponíveis.
+É importante salientar que os dados utilizados neste desafio estão disponíveis exclusivamente no Google Drive para os alunos da disciplina. No entanto, o projeto pode ser facilmente adaptado para outros contextos nos quais os dados estejam disponíveis.
 
 ## Diagrama de Fluxo
 
@@ -35,7 +35,7 @@ Este projeto foi desenvolvido utilizando o Poetry para gerenciamento de ambiente
 
 ### Instalação das Dependências
 
-Você pode instalar as dependências manualmente, ou, utilizando o Poetry ou o Pip com os seguintes comandos.
+Você pode instalar as dependências manualmente, ou, utilizando o Poetry ou o Pip com os seguintes comandos:
 
 #### Utilizando Poetry
 
@@ -102,8 +102,8 @@ Isso irá garantir que as informações sejam persistidas no banco de dados Post
 - Os arquivos CSV não estão disponíveis nas pastas <code>raw</code> e <code>processed</code> porque são muito pesados.
 - O código foi adaptado para lidar com erros, ou pelo menos auxiliar na compreensão deles, e para evitar o download de arquivos que já foram baixados anteriormente.
 - Também inclui a "boa prática" de salvar o nome do arquivo na tabela, juntamente com a data e hora de processamento.
-- Foram disponibilizados dois scripts Jupyter: um chamado 'functional', que utiliza apenas funções, e outro chamado 'oriented', que utiliza orientação a objetos (o que não é muito diferente do functional).
-- É notável o quão rápido o DuckDB conseguiu ler, processar e persistir mais de 100 milhões de linhas. Surge um forte concorrente para o Spark? Veremos nos próximos episódios.
+- Foram disponibilizados dois scripts Jupyter: um chamado <code>functional</code>, que utiliza apenas funções, e outro chamado <code>oriented</code>, que utiliza orientação a objetos (o que não é muito diferente do functional).
+- É notável o quão rápido o DuckDB conseguiu ler, processar e persistir mais de 100 milhões de linhas. Surge um forte concorrente para o Spark? Veremos nos próximos episódios. 
 
 <hr>
 
