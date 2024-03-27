@@ -70,7 +70,8 @@ pip install -r requirements.txt
 Substitua <code>id_da_pasta_google_drive</code> pelo ID da pasta do Google Drive que você deseja acessar para fazer o download dos arquivos.
 
 ### Conclusão
-Após seguir esses passos, você estará pronto para automatizar o download dos arquivos do Google Drive. Esteja ciente de que este tutorial é uma orientação geral e pode precisar ser ajustado.
+
+Após seguir esses passos, você estará pronto para automatizar o download dos arquivos do Google Drive. No entanto, esteja ciente de que este tutorial é uma orientação geral e pode precisar ser ajustado de acordo com as especificidades do seu projeto ou ambiente.
 
 ## Configurações do Projeto - Parte 2
 
