@@ -40,6 +40,8 @@ Você pode instalar as dependências manualmente, ou, utilizando o Poetry ou o P
 #### Utilizando Poetry
 
 ```bash
+poetry config virtualenvs.in-project true
+poetry env local 3.12.1
 poetry install
 
 ```
