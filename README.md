@@ -49,7 +49,7 @@ poetry install
 #### Utilizando Pip
 
 ```bash
-pip install -r requirements.txt
+pip install duckdb jupyter google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client python-dotenv
 
 ```
 
