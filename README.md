@@ -40,7 +40,7 @@ Você pode instalar as dependências manualmente, ou, utilizando o Poetry ou o P
 #### Utilizando Poetry
 
 ```bash
-poetry add -r requirements.txt
+poetry install
 
 ```
 
