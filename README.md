@@ -89,7 +89,7 @@ Você pode escolher entre utilizar o Docker para subir um banco PostgreSQL ou in
 
 #### Outras maneiras
 
-Segue tutorial aleatório da **<a href="https://youtu.be/L_2l8XTCPAE?si=-OJ21qv_48BgHFq2">Hashtag Treinamentos</a>**. <br>Script de criação da tabela disponibilizado em <code>sql</code>.
+Segue tutorial aleatório da **<a href="https://youtu.be/L_2l8XTCPAE?si=-OJ21qv_48BgHFq2">Hashtag Treinamentos</a>**. <br>Script de criação da tabela disponibilizado em <code>src/sql</code>.
 
 ### Conclusão
 
@@ -106,7 +106,7 @@ Isso irá garantir que as informações sejam persistidas no banco de dados Post
 - O código foi adaptado para lidar com erros, ou pelo menos auxiliar na compreensão deles, e para evitar o download de arquivos que já foram baixados anteriormente.
 - Também inclui a "boa prática" de salvar o nome do arquivo na tabela, juntamente com a data e hora de processamento.
 - Foram disponibilizados dois scripts Jupyter: um chamado <code>functional</code>, que utiliza apenas funções, e outro chamado <code>oriented</code>, que utiliza orientação a objetos (o que não é muito diferente do functional).
-- É notável o quão rápido o DuckDB conseguiu ler, processar e persistir mais de 100 milhões de linhas. Surge um forte concorrente para o Spark? Veremos nos próximos episódios. 
+- É notável o quão rápido o DuckDB conseguiu ler, processar e persistir mais de 100 milhões de linhas em minha máquina, levando cerca de 2 minutos para persistir, utilizando 24 GB de RAM. Surge um forte concorrente para o Spark? Veremos nos próximos episódios. 
 
 <hr>
 
