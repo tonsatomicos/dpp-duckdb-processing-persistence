@@ -15,7 +15,7 @@ Para a leitura, processamento e persistência dos dados, escolhi utilizar o Duck
 
 ## Diagrama de Fluxo
 
-![Diagram](https://github.com/tonsatomicos/dpp-duckdb-processing-persistence/blob/main/assets/diagram.png?raw=true)
+![Diagram](https://github.com/tonsatomicos/dpp-duckdb-processing-persistence/blob/main/assets/diagram_pipeline.png?raw=true)
 
 Sinta-se à vontade para clonar, adaptar e ajustar o projeto conforme necessário. Consulte as instruções abaixo, se precisar. :alien:
 
