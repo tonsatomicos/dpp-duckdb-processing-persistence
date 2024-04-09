@@ -1,8 +1,8 @@
 version: '3.8'
 
 services:
-  unifor-teste:
-    container_name: unifor-teste
+  projeto:
+    container_name: postgresql_duckdb
     image: postgres:16.0
     environment:
       POSTGRES_USER: unifor
