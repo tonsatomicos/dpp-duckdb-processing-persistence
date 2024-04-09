@@ -65,7 +65,7 @@ pip install duckdb jupyter google-auth google-auth-oauthlib google-auth-httplib2
 - No menu lateral, navegue até "APIs e Serviços" > "Tela de Permissão OAuth" e adicione o seu endereço de e-mail como um usuário de teste.
 - Volte ao menu principal e selecione "Credenciais".
 - Crie um novo conjunto de credenciais selecionando "IDs do Cliente OAuth".
-- Baixe o arquivo de credenciais gerado e salve-o como token.json, na pasta <code>config/credentials</code>.
+- Baixe o arquivo de credenciais gerado e salve-o como credentials.json, na pasta <code>config/credentials</code>.
 - Na barra de pesquisa na parte superior da página, procure por "Google Drive API" e clique para ativar o serviço.</li>
 - Crie um arquivo <code>.env</code> na pasta <code>config</code> e salve nele a seguinte linha:
 <pre><code>FOLDER_ID=id_da_pasta_google_drive</code></pre>
