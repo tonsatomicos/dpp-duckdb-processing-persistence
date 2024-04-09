@@ -70,6 +70,7 @@ pip install duckdb jupyter google-auth google-auth-oauthlib google-auth-httplib2
 - Crie um arquivo <code>.env</code> na pasta <code>config</code> e salve nele a seguinte linha:
 <pre><code>FOLDER_ID=id_da_pasta_google_drive</code></pre>
 Substitua <code>id_da_pasta_google_drive</code> pelo ID da pasta do Google Drive que você deseja acessar para fazer o download dos arquivos.
+- O primeiro acesso irá abrir uma tela do Google para autenticação.
 
 ### Conclusão
 
@@ -103,9 +104,8 @@ Isso irá garantir que as informações sejam persistidas no banco de dados Post
 ## Considerações Finais
 
 - Os arquivos CSV não estão disponíveis nas pastas <code>raw</code> e <code>processed</code> porque são muito pesados.
-- O código foi adaptado para lidar com erros, ou pelo menos auxiliar na compreensão deles, e para evitar o download de arquivos que já foram baixados anteriormente.
+- O código foi adaptado para lidar com erros, ou pelo menos auxiliar na compreensão deles, e para evitar o download de arquivos que já foram baixados anteriormente, etc.
 - Também inclui a "boa prática" de salvar o nome do arquivo na tabela, juntamente com a data e hora de processamento.
-- Foram disponibilizados dois scripts Jupyter: um chamado <code>functional</code>, que utiliza apenas funções, e outro chamado <code>oriented</code>, que utiliza orientação a objetos (o que não é muito diferente do functional).
 - É notável o quão rápido o DuckDB conseguiu ler, processar e persistir mais de 100 milhões de linhas em minha máquina, levando cerca de 2 minutos para persistir, utilizando 24 GB de RAM. Surge um forte concorrente para o Spark? Veremos nos próximos episódios. 
 
 <hr>
