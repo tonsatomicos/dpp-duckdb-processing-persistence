@@ -3,4 +3,5 @@ config/.env
 data/processed/*.csv
 data/raw/*.csv
 jobs/.ipynb_checkpoints
-.venv  
+.venv
+poetry.lock
