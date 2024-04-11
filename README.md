@@ -67,9 +67,8 @@ pip install duckdb jupyter google-auth google-auth-oauthlib google-auth-httplib2
 - Crie um novo conjunto de credenciais selecionando "IDs do Cliente OAuth".
 - Baixe o arquivo de credenciais gerado e salve-o como credentials.json, na pasta <code>config/credentials</code>.
 - Na barra de pesquisa na parte superior da página, procure por "Google Drive API" e clique para ativar o serviço.</li>
-- Crie um arquivo <code>.env</code> na pasta <code>config</code> e salve nele a seguinte linha:
-<pre><code>FOLDER_ID=id_da_pasta_google_drive</code></pre>
-Substitua <code>id_da_pasta_google_drive</code> pelo ID da pasta do Google Drive que você deseja acessar para fazer o download dos arquivos.
+- Crie um arquivo <code>.env</code> na pasta <code>config</code> e salve nele a seguinte linha:<pre><code>FOLDER_ID=id_da_pasta_google_drive</code></pre>
+- Substitua <code>id_da_pasta_google_drive</code> pelo ID da pasta do Google Drive que você deseja acessar para fazer o download dos arquivos.
 - O primeiro acesso irá abrir uma tela do Google para autenticação.
 
 ### Conclusão
