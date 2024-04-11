@@ -145,12 +145,14 @@ class DataProcessor:
                     self.conn_duckdb.close()     
 
 def main():
+    # Env
+    dotenv_path = 'C://Tecnology//Projects//unifor-challenge-data-processing//config//.env'
+    load_dotenv(dotenv_path)
+
     # GDriveFolder class configs
     credentials = 'C://Tecnology//Projects//unifor-challenge-data-processing//config//credentials//'
     raw_folder_items = "C://Tecnology//Projects//unifor-challenge-data-processing//data//raw//"
     processed_folder_items = "C:/Tecnology//Projects//unifor-challenge-data-processing//data//processed//"
-    dotenv_path = 'C://Tecnology//Projects//unifor-challenge-data-processing//config//.env'
-    load_dotenv(dotenv_path)
     g_drive_folder_id=os.getenv("g_drive_folder_id")
 
     # DataProcessor class configs
