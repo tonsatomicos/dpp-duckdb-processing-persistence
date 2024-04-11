@@ -9,7 +9,6 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from dotenv import load_dotenv
 
-
 class GDriveFolder:
     def __init__(self, credentials, raw_folder_items, processed_folder_items, g_drive_folder_id):
         self.credentials = credentials
@@ -24,8 +23,8 @@ class GDriveFolder:
         try:
             creds = None
             scopes = self.SCOPES
-            token_path = os.path.join(self.credentials,'token.json')
-            credentials_path = os.path.join(self.credentials,'credentials.json')
+            token_path = os.path.join(self.credentials,"token.json")
+            credentials_path = os.path.join(self.credentials,"credentials.json")
 
             if os.path.exists(token_path):
                 creds = Credentials.from_authorized_user_file(token_path)
@@ -38,17 +37,17 @@ class GDriveFolder:
                         credentials_path, scopes)
                     creds = flow.run_local_server(port=0)
 
-                with open(token_path, 'w') as token:
+                with open(token_path, "w") as token:
                     token.write(creds.to_json())
 
-            self.service = build('drive', 'v3', credentials=creds)
+            self.service = build("drive", "v3", credentials=creds)
         
         except Exception as e:
-            print('Error authenticating: ', e)
+            print(f"Error authenticating: {e}")
     
     def download_files(self):
         if not self.service:
-            print('Error authenticating.')
+            print("Error authenticating.")
             return
         
         try:
@@ -63,7 +62,7 @@ class GDriveFolder:
             items = results.get('files', [])
 
             if not items:
-                print('No files found.')
+                print("No files found.")
 
             else:
                 for item in items:
@@ -81,10 +80,10 @@ class GDriveFolder:
                         self.new_files = True
 
         except OSError as e:
-            print("A system error occurred during the download:", e)
+            print(f"A system error occurred during the download: {e}")
             
         except Exception as e:
-            print("An error occurred during the download:", e)
+            print(f"An error occurred during the download: {e}")
 
         finally:
             if self.service is not None:
@@ -113,7 +112,7 @@ class DataProcessor:
             self.conn_duckdb.execute(f"LOAD {self.db_plugin}")
         
         except Exception as e:
-                    print("An error occurred while connecting to the database: ", e)
+            print(f"An error occurred while connecting to the database: {e}")
 
     def authenticate_duckdb_postgres(self):
         try:   
@@ -121,7 +120,7 @@ class DataProcessor:
             self.conn_duckdb_postgres = True
 
         except Exception as e:
-                    print("An error occurred while connecting to the database: ", e)
+            print(f'An error occurred while connecting to the database: {e}')
                     
     def process_and_persist(self):
         if not self.conn_duckdb:
@@ -143,32 +142,32 @@ class DataProcessor:
             self.conn_duckdb.execute("INSERT INTO db.duckdb_ibge SELECT * FROM temp_table")
 
         except Exception as e:
-            print("An error occurred during processing: ", e)
+            print(f"An error occurred during processing: {e}")
 
         finally:
             if self.conn_duckdb is not None:
                 self.conn_duckdb.close()
-                self.conn_duckdb = None     
+                self.conn_duckdb = None 
 
 def main():
     # Env
-    dotenv_path = 'C://Tecnology//Projects//unifor-challenge-data-processing//config//.env'
+    dotenv_path = "C://Tecnology//Projects//unifor-challenge-data-processing//config//.env"
     load_dotenv(dotenv_path)
 
     # GDriveFolder class configs
-    credentials = 'C://Tecnology//Projects//unifor-challenge-data-processing//config//credentials//'
+    credentials = "C://Tecnology//Projects//unifor-challenge-data-processing//config//credentials//"
     raw_folder_items = "C://Tecnology//Projects//unifor-challenge-data-processing//data//raw//"
     processed_folder_items = "C:/Tecnology//Projects//unifor-challenge-data-processing//data//processed//"
     g_drive_folder_id=os.getenv("g_drive_folder_id")
 
     # DataProcessor class configs
-    db_plugin = 'postgres'
-    db_name = 'unifor_duckdb'
-    db_user = 'unifor'
-    db_pass = 'unifor'
-    db_host = 'localhost'
-    db_port = '5437'
-    db_query = 'CREATE TEMPORARY TABLE temp_table (COD_UF VARCHAR, COD_MUN VARCHAR, COD_ESPECIE VARCHAR, LATITUDE VARCHAR, LONGITUDE VARCHAR, NV_GEO_COORD VARCHAR, NOME_ARQUIVO VARCHAR, DT_CADASTRO DATETIME)'
+    db_plugin = "postgres"
+    db_name = "unifor_duckdb"
+    db_user = "unifor"
+    db_pass = "unifor"
+    db_host = "localhost"
+    db_port = "5437"
+    db_query = "CREATE TEMPORARY TABLE temp_table (COD_UF VARCHAR, COD_MUN VARCHAR, COD_ESPECIE VARCHAR, LATITUDE VARCHAR, LONGITUDE VARCHAR, NV_GEO_COORD VARCHAR, NOME_ARQUIVO VARCHAR, DT_CADASTRO DATETIME)"
     
     # GdriveFolder class
     obj_gdrivefolder = GDriveFolder(credentials, raw_folder_items, processed_folder_items, g_drive_folder_id)
@@ -186,7 +185,5 @@ def main():
             if obj_gdrivefolder.new_files:
                 obj_dataprocessor.process_and_persist()
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
-
-
