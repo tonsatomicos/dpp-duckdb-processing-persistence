@@ -86,6 +86,11 @@ class GDriveFolder:
         except Exception as e:
             print("An error occurred during the download:", e)
 
+        finally:
+            if self.service is not None:
+                self.service.close()
+                self.service = None 
+
 class DataProcessor:
     def __init__(self, raw_folder_items, processed_folder_items, db_plugin, db_name, db_user, db_pass, db_host, db_port, db_query):
         self.raw_folder_items = raw_folder_items
@@ -141,8 +146,9 @@ class DataProcessor:
             print("An error occurred during processing: ", e)
 
         finally:
-            if 'conn' in locals():
-                    self.conn_duckdb.close()     
+            if self.conn_duckdb is not None:
+                self.conn_duckdb.close()
+                self.conn_duckdb = None     
 
 def main():
     # Env
