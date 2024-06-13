@@ -1,4 +1,4 @@
-# <p align="center">Projeto de Processamento de Dados<br>Explorando DuckDB</p>
+# <p align="center">Projeto de Linguagem de Programação para Engenharia de Dados<br>Explorando DuckDB</p>
 
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=LICENCA&message=...&color=GREEN&style=for-the-badge"/>     
